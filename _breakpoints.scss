@@ -1,0 +1,105 @@
+/** This is my go to SCSS breakpoint mixin **/
+/** You can choose from specific displays to generic ones **/
+/** I'll try to keep this updated **/
+$breakpoints: (
+  /* ----------- Apple Watch ----------- */
+  'appleWatch' : (max-device-width: 42mm) and (min-device-width: 38mm),
+
+  /* ----------- Moto 360 Watch ----------- */
+  'motoWatch': (max-device-width: 218px) and (max-device-height: 281px),
+
+  /* ----------- iPhone 4 and 4S ----------- */
+  'iphone4': (min-device-wisth: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2),
+  'iphone4port': (min-device-wisth: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+  'iphone4land': (min-device-wisth: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+
+  /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+  'iphone5': (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2),
+  'iphone5port': (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+  'iphone5land': (min-device-width: 320px) and (max-device-width: 568px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+
+  /* ----------- iPhone 6, 6S, 7 and 8 ----------- */
+  'iphone7': only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2),
+  'iphone7port': only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait),
+  'iphone7land': only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: landscape),
+
+  /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+  'iphone7+': only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3),
+  'iphone7+port': only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait),
+  'iphone7+land': only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
+
+  /* ----------- iPhone X ----------- */
+  'iphonex': only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3),
+  'iphonexport': only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: portrait),
+  'iphonexland': only screen and (min-device-width: 375px) and (max-device-width: 812px) and (-webkit-min-device-pixel-ratio: 3) and (orientation: landscape),
+
+  /** APPLE TABLETS **/
+  /* ----------- iPad 1, 2, Mini and Air ----------- */
+  'ipad1': only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 1),
+  'ipad1port': only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 1) ,
+  'ipad1land': only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1),
+
+  /* ----------- iPad 3, 4 and Pro 9.7" ----------- */
+  'ipad3': only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (-webkit-min-device-pixel-ratio: 2),
+  'ipad3port': only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2),
+  'ipad3land': only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2),
+
+
+  /* ----------- iPad Pro 10.5" ----------- */
+  'ipadpro': only screen and (min-device-width: 834px) and (max-device-width: 1112px) and (-webkit-min-device-pixel-ratio: 2),
+  /* Portrait */
+  /* Declare the same value for min- and max-width to avoid colliding with desktops */
+  /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+  'ipadproport': only screen and (min-device-width: 834px) and (max-device-width: 834px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2),
+  /* Landscape */
+  /* Declare the same value for min- and max-width to avoid colliding with desktops */
+  /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+  'ipadproland':  only screen and (min-device-width: 1112px) and (max-device-width: 1112px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2),
+
+
+  /* ----------- iPad Pro 12.9" ----------- */
+  /* Portrait and Landscape */
+  'ipadpro12': only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2),
+
+  /* Portrait */
+  /* Declare the same value for min- and max-width to avoid colliding with desktops */
+  /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+  'ipadpro12port': only screen and (min-device-width: 1024px) and (max-device-width: 1024px) and (orientation: portrait) and (-webkit-min-device-pixel-ratio: 2),
+
+  /* Landscape */
+  /* Declare the same value for min- and max-width to avoid colliding with desktops */
+  /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
+  'ipadpro12land': only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+
+  /* ----------- Non-Retina Screens ----------- */
+  'laptop': screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1),
+
+  /* ----------- Retina Screens ----------- */
+  'retina': screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi),
+
+  'tiny':   only screen and ( max-width: 375px ),
+  'small':   only screen and ( min-width: 415px )and ( max-width: 767px ),
+  'medium':  only screen and ( min-width: 768px ) and ( max-width: 1023px ),
+  'large':   only screen and ( min-width: 1024px ) and ( max-width: 1280px ),
+  'xlarge':   only screen and ( min-width: 1281px ) and ( max-width: 5920px ),
+  'xlargeh':   only screen and ( min-width: 1281px ) and ( max-width: 5920px ) and (min-aspect-ratio:16/9),
+  '1366x768':   only screen and ( min-aspect-ratio: 33/9 ) and ( max-aspect-ratio: 16/9 ) and ( min-device-height: 300px ) and ( max-device-height: 800px ),
+  'landscape' : only screen and (orientation:landscape) and (min-device-width: 667px),
+  'portrait' : only screen and (orientation:portrait)
+) !default;
+
+@mixin respond-to($breakpoint) {
+    // If the key exists in the map
+    @if map-has-key($breakpoints, $breakpoint) {
+      // Prints a media query based on the value
+      @media #{inspect(map-get($breakpoints, $breakpoint))} {
+        @content;
+      }
+    }
+
+    // If the key doesn't exist in the map
+    @else {
+      @warn "Unfortunately, no value could be retrieved from `#{$breakpoint}`. "
+          + "Available breakpoints are: #{map-keys($breakpoints)}.";
+    }
+}
