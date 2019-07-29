@@ -69,7 +69,7 @@ $breakpoints: (
   /* Landscape */
   /* Declare the same value for min- and max-width to avoid colliding with desktops */
   /* Source: https://medium.com/connect-the-dots/css-media-queries-for-ipad-pro-8cad10e17106*/
-  'ipadpro12land': only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2)
+  'ipadpro12land': only screen and (min-device-width: 1366px) and (max-device-width: 1366px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 2),
 
   /* ----------- Non-Retina Screens ----------- */
   'laptop': screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1),
