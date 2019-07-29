@@ -70,47 +70,57 @@ and if you open it on an iPhone7+:
 ## THE LIST OF BREAKPOINTS
 Below is a complete list of breakpoints available at the moment:
 
-appleWatch
-motoWatch
-iphone4
-iphone4port
-iphone4land
-iphone5
-iphone5port
-iphone5land
-iphone7
-iphone7port
-iphone7land
-iphone7+
-iphone7+port
-iphone7+land
-iphonex
-iphonexport
-iphonexland
-ipad1
-ipad1port
-ipad1land
-ipad3
-ipad3port
-ipad3land
-ipadpro
-ipadproport
-ipadproland
-ipadpro12
-ipadpro12port
-ipadpro12land
-laptop
-retina
-tiny
-small
-medium
-large
-xlarge
-xlargeh
-1366x768
-landscape
-portrait
+### Device Specific Breakpoints
+These can come in handy when you have a very specific problem with a device - they should not be you *GO TO* solution.
 
+- appleWatch
+- motoWatch
+- iphone4
+- iphone4port
+- iphone4land
+- iphone5
+- iphone5port
+- iphone5land
+- iphone7
+- iphone7port
+- iphone7land
+- iphone7+
+- iphone7+port
+- iphone7+land
+- iphonex
+- iphonexport
+- iphonexland
+- ipad1
+- ipad1port
+- ipad1land
+- ipad3
+- ipad3port
+- ipad3land
+- ipadpro
+- ipadproport
+- ipadproland
+- ipadpro12
+- ipadpro12port
+- ipadpro12land
+- laptop
+- retina
+
+<sub><sup>I'll be posting descriptions shortly</sup></sub>
+
+### Less specific breakpoints
+Here are some breakpoints that I commonly have come across depending on my layouts and specific clients.
+
+- tiny - Small cellphones
+- small - Standard cellphone
+- medium - Tablets
+- large - Laptops
+- xlarge - Retinas/Desktops
+- xlargeh - Very large displays like TVs
+- 1366x768 - Very common resolution in clients
+- landscape - Landscape viewport
+- portrait - Portrait viewport
+
+<sub><sup>I'll be posting descriptions shortly</sup></sub>
 
 ## References
 
@@ -118,5 +128,3 @@ The original Mixin code and artice explaining why and how it works can be found 
 [Mixin to Manage Breakpoints](https://css-tricks.com/snippets/sass/mixin-manage-breakpoints/) - article by [Hugo Giraudel](https://css-tricks.com/author/hugogiraudel/)
 
 Most of my very specific breakpoints are taken from the article [Media Queries for Standard Devices](https://css-tricks.com/snippets/css/media-queries-for-standard-devices/)
-
-
